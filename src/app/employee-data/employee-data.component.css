@@ -1,0 +1,49 @@
+.container{
+    width: 80%;
+    margin: auto;
+    
+}
+.heading{
+    margin-top: 10px;
+}
+.add-btn{
+    padding: 5px 10px;
+    background: rgba(0, 0, 255, 0.589);
+    margin-top: 10px;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+}
+table{
+    box-shadow: 1px 1px 10px black;
+    padding: 10px 20px;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+table td{
+    padding: 0 20px;
+}
+thead th{
+    height: 50px;
+    min-width: auto;
+    padding: 10px;
+    background: rgba(246, 67, 67, 0.404);
+}
+tbody tr{
+    height: 50px;
+    
+}
+tr:nth-child(2n){
+    background: #c9dcff89;
+    
+}
+table tr td span{
+    background: white;
+    border: 1px solid rgb(61, 61, 61);
+    padding: 2px 8px;
+    margin: 0 5px;
+    cursor: pointer;
+}

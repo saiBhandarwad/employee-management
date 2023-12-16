@@ -1,0 +1,30 @@
+<div class="container display-none "  #container>
+    <div class="inner-container">
+        <h1>Add Employee</h1>
+        <div class="input-container">
+            <label for="">First Name</label>
+            <input type="text" id="firstname" [(ngModel)]="firstname">
+        </div>
+        <div class="input-container">
+            <label for="">Last Name</label>
+            <input type="text" id="lastname" [(ngModel)]="lastname">
+        </div>
+        <div class="input-container">
+            <label for="">Email</label>
+            <input type="text" id="email" [(ngModel)]="email">
+        </div>
+        <div class="input-container">
+            <label for="">Salary</label>
+            <input type="text" id="salary" [(ngModel)]="salary">
+        </div>
+        <div class="input-container">
+            <label for="">Date Of Joining</label>
+            <input type="date" id="doj" [(ngModel)]="doj">
+        </div>
+        <div class="button-container">
+            <span (click)="addEmployee()" id="add-btn">Add</span>
+            <span class="hide-btn" (click)="updateEmployee()" id="update-btn">Update</span>
+            <span (click)="handleAddForm('display-none','display-block')">Cancel</span>
+        </div>
+    </div>
+</div>

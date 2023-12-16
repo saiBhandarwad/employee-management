@@ -1,0 +1,34 @@
+<app-add-employee-form></app-add-employee-form>
+<div class="container">
+    <h1 class="heading">Employee Management System</h1>
+    <button class="add-btn" (click)="handleAddForm('display-block','display-none')">Add Employee</button>
+    <table>
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>Salary</th>
+                <th>Date Of Joining</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngIf="employeeArray.length===0; else data">
+                <td colspan="5">No data to display</td>
+            </tr>
+            <ng-template #data>
+                <tr  *ngFor="let employee of employeeArray; index as i">
+                    <td>{{i}}</td>
+                    <td>{{employee.firstname}}</td>
+                    <td>{{employee.lastname}}</td>
+                    <td>{{employee.email}}</td>
+                    <td>{{employee.salary}}</td>
+                    <td>{{employee.doj}}</td>
+                    <td><span (click)="editEmployee(i)">Edit</span><span (click)="deleteEmployee(i)">Delete</span></td>
+                </tr>
+            </ng-template>
+        </tbody>
+    </table>
+</div>
