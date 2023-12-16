@@ -60,3 +60,9 @@ input{
 .hide-btn{
     display: none;
 }
+@media screen and (max-width:768px) {
+    .inner-container{
+        width: 90%;
+        margin: auto;
+    }   
+}
